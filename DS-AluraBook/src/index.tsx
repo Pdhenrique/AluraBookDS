@@ -9,3 +9,4 @@ export const Thing: FC<Props> = ({ children }) => {
 };
 
 export * from './components/AbButton/';
+export * from './components/AbCard/';
