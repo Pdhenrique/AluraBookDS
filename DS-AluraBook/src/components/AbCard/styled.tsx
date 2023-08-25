@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
   display: flex;
-  width: 551;
-  padding: 48px 32px 48px 48px;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+
+  width: 551px;
+  height: auto;
+  min-height: 374;
+  padding: 48px 32px 48px 48px;
 
   border-radius: 10px;
   background-color: #fff;
@@ -13,7 +17,13 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledLabel = styled.label`
-  width: 100px;
+  width: auto;
   height: auto;
-  background-color: red;
+
+  font-family: sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #eb9b00;
 `;
