@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import { StyledContainer, StyledLabel, cardtypes } from '.';
+import { AbButton } from '../AbButton';
 
 export const AbCard: FC<cardtypes> = ({
-  label,
-  content = 'Testando o card',
+  label = 'About the book:',
+  content = 'Habilidades de gestão para alavancar sua carreira',
   price,
   ...props
 }) => {
@@ -11,6 +12,7 @@ export const AbCard: FC<cardtypes> = ({
     <StyledContainer {...props}>
       <StyledLabel>{label}</StyledLabel>
       {content}
+      <AbButton />
     </StyledContainer>
   );
 };
